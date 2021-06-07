@@ -1,0 +1,727 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/*------------------------------------------------------------------
+    SKELETON
+-------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*------------------------------------------------------------------
+    HEADER
+-------------------------------------------------------------------*/
+
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.25em 12em 1.25em 12em;
+  background: #222;
+  z-index: 100000;
+  opacity: 0.75;
+}
+
+.nav h2 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.nav a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav a i {
+  text-decoration: none;
+  padding-right: 7px;
+  font-size: 45px;
+  color: #fff;
+}
+
+.nav a i:hover {
+  color: #1db954;
+}
+
+#item .line {
+  border-left: 2px solid white;
+  height: 16px;
+  padding: 0 18px;
+}
+
+#item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#item li {
+  list-style: none;
+  padding-right: 25px;
+}
+
+#item li.laddaned {
+  padding-right: 35px;
+}
+
+#item li.profil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#item li.profil .avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#item li a {
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bolder;
+  color: #fff;
+  padding-left: 12px;
+}
+
+#item li a:hover,
+#item .icon i:hover {
+  color: #1db954;
+  cursor: pointer;
+}
+
+#item .icon i {
+  color: #fff;
+  padding-right: 30px;
+  font-weight: bolder;
+}
+
+#bar {
+  color: white;
+  font-weight: lighter;
+  font-size: 1.5em;
+  display: none;
+}
+
+/*------------------------------------------------------------------
+    HEADER START
+-------------------------------------------------------------------*/
+
+.header_start {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6em 12em 4em 12em;
+  background: #91fff0;
+}
+
+.header_start .mid {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header_start .mid p {
+  color: #2d46b9;
+  font-size: 0.9em;
+  margin-bottom: 1.4em;
+  font-weight: 600;
+}
+
+.header_start .mid h2 {
+  color: #2d46b9;
+  font-size: 3.5em;
+  margin-bottom: 0.1em;
+}
+
+.header_start .mid h4 {
+  color: #2d46b9;
+  font-size: 0.9;
+  font-weight: 500;
+}
+.header_start .mid h6 {
+  color: #2d46b9;
+  font-size: 0.9;
+  font-weight: 500;
+}
+
+.header_start .mid .btn {
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+.header_start .mid .btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header_start .mid .btn a.border {
+  background-color: #2d46b9;
+  color: white;
+  border: 1px solid #2d46b9;
+  font-weight: 600;
+  padding: 0.8em 3em;
+  border-radius: 30px;
+}
+
+.header_start .mid .btn a.border:hover {
+  background: #fff;
+  color: black;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+.img_kpop {
+  display: none;
+}
+
+.img_kpop2 {
+  display: none;
+}
+
+
+/*------------------------------------------------------------------
+    Song Cover
+-------------------------------------------------------------------*/
+
+.song_cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 8em 1em 8em;
+}
+
+.song_cover .h2 {
+  font-size: 2.8em;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.song_cover .paragraph {
+  font-size: 1em;
+  color: #222;
+  font-weight: 600;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.song_cover .classMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song_cover .classMenu .team1 {
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+
+.song_cover .classMenu .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.song_cover .classMenu .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/*----------*/
+.song_covers2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8em 7em 8em;
+}
+
+.song_covers2 .paragraph {
+  font-size: 1.3em;
+  color: #95a5a6;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.song_covers2 .h2 {
+  font-size: 2.2em;
+  color: #222;
+  font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.song_covers2 .classMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song_covers2 .classMenu .team1 {
+  width: 32%;
+  height: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 1.6px 3.6px rgba(0, 0, 0, 0.01),
+    0 4.4px 10px rgba(0, 0, 0, 0.015), 0 10.6px 24.1px rgba(0, 0, 0, 0.02),
+    0 35px 80px rgba(0, 0, 0, 0.03);
+}
+
+.song_covers2 .classMenu .team1 .img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.song_covers2 .classMenu .team1 .teamDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+
+.footer {
+  border-top: 1px solid #050505;
+  background-color: black;
+  padding: 5em 8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .icon i{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  font-size: 30px;
+}
+
+.footer p {
+  color: #ffffff;
+  justify-content: flex-start;
+}
+
+.footer p i {
+  color: red;
+  padding-right: 5px;
+}
+
+
+/*------------------------------------------------------------------
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!                 !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!  MEDIA QUERIES  !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!                 !!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 1921px) {
+  .nav {
+    padding: 1.25em 12em 1.25em 12em;
+  }
+
+    .img_kpop {
+    display: initial;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1799px) {
+  .nav {
+    padding: 1.25em 12em 1.25em 12em;
+  }
+}
+
+/*-----------------------  FOR LAPTOPS  ---------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding: 1.25em 4.5em;
+  }
+
+  .nav h2 {
+    font-size: 1.4em;
+  }
+
+  #item li {
+    padding-right: 30px;
+  }
+
+  #item li a {
+    font-size: 0.9em;
+  }
+
+  #item .icon i {
+    padding-right: 20px;
+  }
+}
+
+/*--------------------  FOR SMALLER TABLETS  ----------------------*/
+
+@media screen and (max-width: 1080px) {
+  .header_start {
+    padding: 8em 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8em 2em 3em 2em;
+  }
+
+  .img_kpop2 {
+    display: initial;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .img_kpop {
+    display: none;
+  }
+
+  .header_start .mid {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+
+  @media screen and (max-width: 1024px) {
+    .nav {
+      padding: 1.25em 2.3em 1.25em 2.5em;
+      background: #222;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    /*------------------------------------------------------------------
+    HEADER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .nav {
+      padding: 0.85em 1.5em 0.85em 1.5em;
+      background: black;
+      opacity: 100%;
+    }
+
+    #img {
+      width: 5.6em;
+    }
+
+    .nav h2 {
+      font-size: 1.6em;
+    }
+
+    #item {
+      flex-direction: column;
+      text-align: center;
+      width: 300px;
+      height: 80vh;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 100000;
+      margin-top: 4.2em;
+      transition: 0.5s;
+    }
+
+    #item li {
+      padding-right: 0;
+      padding: 4px 0;
+    }
+
+    #item li a {
+      font-size: 1.2em;
+    }
+
+    #item .icon {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #item .icon i {
+      padding: 0 15px 0 15px;
+    }
+
+    #bar {
+      display: initial;
+      cursor: pointer;
+    }
+
+    /*------------------------------------------------------------------
+    HEADER START - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+
+
+.header_start .mid .img_kpop2 {
+text-align: center;
+}
+    .header_start .mid .img_kpop2 #kpop{
+      
+    height: 15em;
+    width: 15em;
+    }
+
+    .header_start .mid p {
+      font-size: 1.1em;
+      margin-bottom: 1.2em;
+      text-align: center;
+    }
+
+    .header_start .mid h2 {
+      font-size: 2.5em;
+      text-align: center;
+    }
+
+    .header_start .mid .btn {
+      margin-top: 1.5em;
+      width: 100%;
+    }
+
+    .header_start .mid .btn a {
+      font-size: 0.9em;
+    }
+
+    .header_start .mid .btn a.border {
+  padding: 0.8em 5em;
+}
+
+
+    /*------------------------------------------------------------------
+    SONGS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .song_cover {
+  padding: 5em 8em 1em 8em;
+  }
+
+  .song_cover .h2 {
+    font-size: 2em;
+    padding-bottom: 30px;
+  }
+
+
+
+  /*---------*/
+  .song_covers2 {
+  padding: 0 8em 7em 8em;
+  }
+
+
+    /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .footer {
+      padding: 6em;
+    }
+  }
+
+  /*-----------------------  FOR TABLETS  ---------------------------*/
+
+  @media screen and (max-width: 768px) {
+    /*------------------------------------------------------------------
+    HEADER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .nav h2 {
+      font-size: 1.5em;
+    }
+
+    .back_img {
+      background-position: center;
+    }
+
+    /*------------------------------------------------------------------
+    HEADER START - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .header_start .mid p {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+
+    .header_start .mid h2 {
+      font-size: 2.1em;
+    }
+
+    .header_start .mid .btn {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header_start .mid .btn a.noborder {
+      padding: 0.7em 1.4em;
+      margin-bottom: 7px;
+    }
+
+    .header_start .mid .btn a.border {
+      padding: 0.7em 1.4em;
+    }
+
+
+    /*------------------------------------------------------------------
+    SONGS - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .song_cover {
+    padding: 6em 6em 1em 6em;
+  }
+
+  .song_cover .classMenu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .song_cover .classMenu .team1 {
+    width: 65%;
+    margin-bottom: 20px;
+  }
+
+  /*--------*/
+  .song_covers2 {
+    padding: 0em 6em 6em 6em;
+  }
+
+  .song_covers2 .classMenu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .song_covers2 .classMenu .team1 {
+    width: 65%;
+    margin-bottom: 20px;
+  }
+
+
+    /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .footer {
+      padding: 5em 2em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /*-----------------------  FOR MOBILES  ---------------------------*/
+
+  @media screen and (max-width: 496px) {
+    /*------------------------------------------------------------------
+    HEADER START - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .header_start .mid .img_kpop2 #kpop{
+      
+    height: 9em;
+    width: 9em;
+    }
+
+    .header_start .mid p {
+      margin-bottom: 0.8em;
+    }
+
+    .header_start .mid h2 {
+      font-size: 1.8em;
+    }
+
+    .header_start .mid .btn {
+      margin-top: 0.7em;
+    }
+
+
+
+    /*------------------------------------------------------------------
+    SONG COVER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  .song_cover {
+    padding: 4em 1em 1em 1em;
+  }
+
+  .song_cover .classMenu .team1 {
+    width: 100%;
+  }
+
+  .song_covers2 {
+    padding: 0em 1em;
+  }
+
+  .song_covers2 .classMenu .team1 {
+    width: 100%;
+  }
+
+    /*------------------------------------------------------------------
+    FOOTER - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+    .footer {
+      padding: 5em 2em;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /*------------------------------------------------------------------
+    MOBILE - MEDIA QUERY
+-------------------------------------------------------------------*/
+
+  @media screen and (max-width: 640px) {
+    .nav {
+      padding: 0.85em 1em 0.85em 0.9em;
+      background: black;
+    }
+  }
+
+  @media screen and (max-width: 496px) {
+    .nav {
+      padding: 0.85em 1em 0.85em 0.9em;
+      background: black;
+    }
+  }
+}
